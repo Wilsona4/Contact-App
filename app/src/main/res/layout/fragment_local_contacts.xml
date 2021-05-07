@@ -42,23 +42,18 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/default_margin"
+
+    <ProgressBar
+        android:id="@+id/local_progress_bar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/listToolbar" />
 
-        <ProgressBar
-            android:id="@+id/local_progress_bar"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:visibility="invisible"
-            android:layout_centerInParent="true"/>
-
-
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,11 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item android:title="@string/search"
-        android:id="@+id/mSearch"
-        android:icon="@drawable/ic_search"
-        app:showAsAction="always|collapseActionView"
-        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+<!--    <item android:title="@string/search"-->
+<!--        android:id="@+id/mSearch"-->
+<!--        android:icon="@drawable/ic_search"-->
+<!--        app:showAsAction="always|collapseActionView"-->
+<!--        app:actionViewClass="androidx.appcompat.widget.SearchView" />-->
     <item android:title="@string/settings" android:id="@+id/mSettings" android:icon="@drawable/ic_baseline_settings_24" app:showAsAction="ifRoom" />
     <item android:title="@string/upload" android:id="@+id/mLocalContacts" />
     <item android:title="@string/sync_local_contacts" android:id="@+id/mSync"/>
