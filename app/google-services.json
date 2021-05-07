@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773208776404",
+    "project_id": "week-6-task-segun-wilson",
+    "storage_bucket": "week-6-task-segun-wilson.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773208776404:android:c2bc8cb56e2f8038776541",
+        "android_client_info": {
+          "package_name": "com.decagon.android.sq007"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773208776404-56pohmkm0t75icttj5ko1jmaee8md2fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABlpxburk1-w7BWK90vuvzy9zQLlk_Qag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773208776404-56pohmkm0t75icttj5ko1jmaee8md2fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

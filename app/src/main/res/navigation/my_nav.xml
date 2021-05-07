@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginRegisterFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.decagon.android.sq007.ui.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <argument
+            android:name="contactArg"
+            app:argType="com.decagon.android.sq007.model.Contact" />
+        <action
+            android:id="@+id/action_listFragment_to_localContactsFragment"
+            app:destination="@id/localContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.decagon.android.sq007.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_editContactFragment"
+            app:destination="@id/editContactFragment" />
+        <argument
+            android:name="detailContactArgs"
+            app:argType="com.decagon.android.sq007.model.Contact" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.decagon.android.sq007.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.decagon.android.sq007.ui.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" />
+    <fragment
+        android:id="@+id/editContactFragment"
+        android:name="com.decagon.android.sq007.ui.EditContactFragment"
+        android:label="fragment_edit_contact"
+        tools:layout="@layout/fragment_edit_contact" >
+        <argument
+            android:name="editContactArgs"
+            app:argType="com.decagon.android.sq007.model.Contact" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.decagon.android.sq007.ui.LoginRegisterFragment"
+        android:label="fragment_login_register"
+        tools:layout="@layout/fragment_login_register" >
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="loginArg"
+            app:argType="string"
+            android:defaultValue="uno" />
+    </fragment>
+    <fragment
+        android:id="@+id/localContactsFragment"
+        android:name="com.decagon.android.sq007.ui.LocalContactsFragment"
+        android:label="fragment_local_contacts"
+        tools:layout="@layout/fragment_local_contacts" >
+        <action
+            android:id="@+id/action_localContactsFragment_to_detailFragment2"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="localContactArgs"
+            app:argType="com.decagon.android.sq007.model.Contact" />
+    </fragment>
+</navigation>
